@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=cyrillic');
+/* font-family: 'Open Sans', sans-serif; */
+@font-face {
+	font-family: "ProximaNova";
+	src: url("../fonts/ProximaNova-Regular.ttf") format("truetype"),
+	url("../fonts/ProximaNova-Regular.woff") format("woff"),
+	url("../fonts/ProximaNova-Regular.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal
+}@font-face {
+	font-family: "OpenSans";
+	src: url("../fonts/OpenSans-Regular.ttf") format("truetype");	
+	font-weight: normal;
+	font-style: normal
+}@font-face {
+	font-family: "OpenSansLight";
+	src: url("../fonts/OpenSans-Light.ttf") format("truetype");	
+	font-weight: normal;
+	font-style: normal
+}@font-face {
+	font-family: "OpenSansBold";
+	src: url("../fonts/OpenSans-Bold.ttf") format("truetype");	
+	font-weight: normal;
+	font-style: normal
+}
+@font-face {
+	font-family: "ProximaNova";
+	src: url("../fonts/ProximaNova-Bold.ttf") format("truetype"),
+	url("../fonts/ProximaNova-Bold.woff") format("woff"),
+	url("../fonts/ProximaNova-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal
+}
+
+*, *::before, *::after{
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+body{
+	min-width: 1280px;
+	max-width: 1920px;
+	background-color: #fafafa;
+	margin: 0 auto;
+}
+main{margin-bottom: 420px;
+ z-index: 2;
+ background: #fafafa;
+}
+.centerBlock{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-left: 26px;
+	padding-right: 26px;
+}
+.clearfix::after{
+	display: block;
+	content: "";
+	clear: both;
+}
+/*********************************/
+.services-usl{
+	margin-bottom: 18px;
+}
+.mt{
+	margin-top: 5px;
+}
+.sectionHeading{
+	margin: 0 0 2rem;
+	font: 700 23px 'Open Sans', sans-serif;
+	color: #2e3036;
+	text-transform: uppercase;
+}
+.sectionHeading::before{
+	content: "";
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	background: #2e3036;
+	width: 25px;
+	height: 2px;
+	margin-top: -1px;
+	margin-right: 5px;
+}
+.moreLink{
+	float: right;
+	font: 14px 'Open Sans', sans-serif;
+	color: #2e3036;
+	text-decoration: none;
+	border-bottom: 1px dashed #2e3036;
+}
+.moreLink:hover{
+	border-bottom-style: solid;
+}
+
+.servicesItem__info h3 a{
+	color: #000;
+	text-decoration: none;
+}
+.servicesItem__info h3 a:hover{
+	text-decoration: underline;
+}
+.servicesList{
+	font-size: 0;
+}
+.servicesItem{
+	display: inline-block;
+	margin-bottom: 2%;
+	vertical-align: top;
+	width: 33.333333%;
+	font-size: initial;
+}
+.servicesItem{
+	position: relative;
+}
+.servicesItem img{
+	display: block;
+}
+.servicesItem__info{
+	width: 94%;
+	height: 94%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 3%;
+	padding: 10px;
+	border: 6px solid transparent;
+	text-align: center;
+}
+.servicesItem__info h3{
+	margin: 50% -0px 0;
+	font: 800 24px 'Open Sans', sans-serif;
+	transform: translateY(-50%);
+}
+.servicesItem__info h3 a{
+	color: #fff;
+}
+.servicesItem__text{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 10px;
+	margin: 0 auto;
+	visibility: hidden;
+}
+.servicesItem__text p{
+	font: 10px 'Open Sans', sans-serif;
+	color: #fff;
+}
+.servicesItem:hover .servicesItem__info{
+	border-color: #fff;
+}
+.servicesItem:hover .servicesItem__text{
+	visibility: visible;
+}
