@@ -100,7 +100,7 @@ main{margin-bottom: 420px;
 	text-decoration: none;
 }
 .servicesItem__info h3 a:hover{
-	text-decoration: underline;
+	cursor: pointer;
 }
 .servicesList{
 	font-size: 0;
@@ -117,6 +117,8 @@ main{margin-bottom: 420px;
 }
 .servicesItem img{
 	display: block;
+    height: 100%;
+    max-width: 100%;
 }
 .servicesItem__info{
 	width: 94%;
@@ -154,4 +156,7 @@ main{margin-bottom: 420px;
 }
 .servicesItem:hover .servicesItem__text{
 	visibility: visible;
+}
+.servicesItem:hover{
+	cursor: pointer;
 }
