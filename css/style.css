@@ -135,7 +135,7 @@ main{margin-bottom: 420px;
 	padding: 10px;
 	border: 6px solid transparent;
 	text-align: center;
-	transition: 0.3s all;
+	transition: 0.6s all;
 }
 .servicesItem__info h3{
 	margin: 50% -0px 0;
@@ -152,14 +152,20 @@ main{margin-bottom: 420px;
 	bottom: 10px;
 	margin: 0 auto;
 	visibility: hidden;
+		
 
 }
 .servicesItem__text p{
 	font: 10px 'Open Sans', sans-serif;
 	color: #fff;
+	transition: 0.1s all;
+	
+	
 }
 .servicesItem:hover .servicesItem__info{
 	border-color: #fff;
+	
+	transition: 0.3s all;
 }
 .servicesItem:hover .servicesItem__text{
 	visibility: visible;
